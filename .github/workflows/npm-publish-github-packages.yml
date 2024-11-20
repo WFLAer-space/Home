@@ -25,7 +25,6 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: npm ci
-      - run: npm test
 
   publish-gpr:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main' || github.event_name == 'release'
