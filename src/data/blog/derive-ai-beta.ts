@@ -1,7 +1,7 @@
 export const deriveAiBeta = {
   id: "derive-ai-beta",
-  title: "Derive AI: Revolutionizing Learning at WFLA International",
-  date: "March 20, 2024",
+  title: "Derive AI Beta Release",
+  date: "November 27, 2024",
   readTime: "4 min read",
   preview: "We're excited to announce the beta release of Derive AI, our advanced learning assistant designed specifically for WFLA International students...",
   content: `

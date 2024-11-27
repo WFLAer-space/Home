@@ -17,9 +17,15 @@ const projects = [
         title: 'Resource Hub',
         description: 'Centralized platform for academic resources',
         icon: Database,
-        url: null,
-        status: 'In Development',
-        details: 'Coming soon in 2024/11.'
+        url: 'https://files.wflaer.space',
+        status: 'Active',
+      },
+      {
+        title: 'Links Collection',
+        description: 'Collection of useful links and resources',
+        icon: Book,
+        url: 'https://links.wflaer.space',
+        status: 'Active'
       }
     ]
   },

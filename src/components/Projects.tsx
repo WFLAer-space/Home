@@ -21,9 +21,9 @@ const projects = [
   {
     title: 'Resource Hub',
     description: 'Centralized platform for academic resources and learning materials.',
-    status: 'In Development',
+    status: 'Active',
     icon: Database,
-    url: null
+    url: 'https://files.wflaer.space'
   }
 ];
 

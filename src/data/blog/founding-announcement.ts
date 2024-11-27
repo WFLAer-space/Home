@@ -1,7 +1,7 @@
 export const foundingAnnouncement = {
   id: "founding-announcement",
   title: "Announcing WFLAer.space: Making Knowledge Within Reach",
-  date: "March 15, 2024",
+  date: "October 27, 2024",
   readTime: "3 min read",
   preview: "Today marks the official launch of WFLAer.space, a non-profit initiative dedicated to enhancing education at WFLA International through technology...",
   content: `
