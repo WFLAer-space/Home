@@ -20,54 +20,10 @@ A modern, responsive website for WFLAer.space, built with React, TypeScript, and
 - React Router
 - Lucide Icons
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 16+ and npm
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/wflaer-space-website.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd wflaer-space-website
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-5. Open your browser and visit `http://localhost:5173`
-
-### Building for Production
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-The built files will be in the `dist` directory.
-
-## Contributing
-
-We welcome contributions! Please feel free to submit a Pull Request.
-
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
 
 ## Contact
 
-For any questions or suggestions, please reach out to us at contact@wflaer.space
+For any questions or suggestions, please reach out to us at [https://www.wflaer.space/contact](https://www.wflaer.space/contact)
