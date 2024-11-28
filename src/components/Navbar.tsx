@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,6 +14,10 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 h-16 transition-all duration-300 ${
@@ -26,11 +32,58 @@ export default function Navbar() {
           />
           <span className="font-medium">WFLAer.space</span>
         </Link>
-        <div className="flex items-center space-x-8">
+
+        {/* 桌面端导航菜单 */}
+        <div className="hidden md:flex items-center space-x-8">
           <Link to="/about" className="text-gray-400 hover:text-white transition-colors">About</Link>
           <Link to="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link>
           <Link to="/projects" className="text-gray-400 hover:text-white transition-colors">Projects</Link>
           <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link>
+        </div>
+
+        {/* 移动端菜单按钮 */}
+        <button 
+          className="md:hidden text-gray-400 hover:text-white transition-colors"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* 移动端下拉菜单 */}
+      <div className={`md:hidden absolute top-16 left-0 right-0 bg-black/95 backdrop-blur-lg transition-all duration-300 ${
+        isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+      }`}>
+        <div className="px-6 py-4 space-y-4">
+          <Link 
+            to="/about" 
+            className="block text-gray-400 hover:text-white transition-colors py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            About
+          </Link>
+          <Link 
+            to="/blog" 
+            className="block text-gray-400 hover:text-white transition-colors py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Blog
+          </Link>
+          <Link 
+            to="/projects" 
+            className="block text-gray-400 hover:text-white transition-colors py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Projects
+          </Link>
+          <Link 
+            to="/contact" 
+            className="block text-gray-400 hover:text-white transition-colors py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </nav>

@@ -36,7 +36,7 @@ export default function Hero() {
         className="relative z-10 text-center max-w-4xl mx-auto px-6 transform transition-all duration-[2000ms] ease-out opacity-0 translate-y-8"
       >
         <div className="space-y-8">
-          <h1 className="text-7xl md:text-8xl font-bold bg-gradient-text">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold bg-gradient-text break-words px-4">
             WFLAer.space
           </h1>
           
