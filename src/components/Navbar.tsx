@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,15 +33,23 @@ export default function Navbar() {
           <span className="font-medium">WFLAer.space</span>
         </Link>
 
-        {/* 桌面端导航菜单 */}
+        {/* Desktop navigation menu */}
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/about" className="text-gray-400 hover:text-white transition-colors">About</Link>
           <Link to="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link>
           <Link to="/projects" className="text-gray-400 hover:text-white transition-colors">Projects</Link>
           <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link>
+          <a 
+            href="https://github.com/WFLAer-space" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-gray-400 hover:text-white transition-colors inline-flex items-center"
+          >
+            GitHub <ArrowUpRight className="w-4 h-4 ml-1" />
+          </a>
         </div>
 
-        {/* 移动端菜单按钮 */}
+        {/* Mobile menu button */}
         <button 
           className="md:hidden text-gray-400 hover:text-white transition-colors"
           onClick={toggleMenu}
@@ -51,7 +59,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* 移动端下拉菜单 */}
+      {/* Mobile dropdown menu */}
       <div className={`md:hidden absolute top-16 left-0 right-0 bg-black/95 backdrop-blur-lg transition-all duration-300 ${
         isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}>
@@ -84,6 +92,15 @@ export default function Navbar() {
           >
             Contact
           </Link>
+          <a 
+            href="https://github.com/WFLAer-space" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="block text-gray-400 hover:text-white transition-colors py-2 inline-flex items-center"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            GitHub <ArrowUpRight className="w-4 h-4 ml-1" />
+          </a>
         </div>
       </div>
     </nav>
