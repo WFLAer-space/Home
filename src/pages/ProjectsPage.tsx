@@ -17,8 +17,8 @@ const projects = [
         title: 'Campus Guide',
         description: 'Quick Search for Campus and Teacher Information',
         icon: Search,
-        url: 'https://campus.guide',
-        status: 'Active'
+        url: 'https://campus.wflaer.space',
+        status: 'Legacy'
       },
       {
         title: 'Resource Hub',
@@ -32,7 +32,7 @@ const projects = [
         description: 'Collection of useful links and resources',
         icon: Book,
         url: 'https://links.wflaer.space',
-        status: 'Active'
+        status: 'Legacy'
       }
     ]
   },
@@ -55,6 +55,12 @@ export default function ProjectsPage() {
     <div className="pt-20">
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-12 p-4 rounded-lg bg-blue-500/10 border border-blue-500/20">
+            <p className="text-blue-400 text-sm">
+              🚀 Some projects listed below have stopped development. We're working on a new one-stop solution that will provide better experience. Stay tuned!
+            </p>
+          </div>
+
           <h1 className="text-4xl font-bold mb-16">Our Projects</h1>
           
           <div className="space-y-20">
@@ -89,8 +95,10 @@ export default function ProjectsPage() {
                             <div className="mt-4">
                               <span className={`text-sm px-3 py-1 rounded-full ${
                                 project.status === 'Beta' 
-                                  ? 'bg-yellow-400/10 text-yellow-400' 
-                                  : 'bg-green-400/10 text-green-400'
+                                  ? 'bg-yellow-400/10 text-yellow-400'
+                                  : project.status === 'Legacy'
+                                    ? 'bg-gray-400/10 text-gray-400'
+                                    : 'bg-green-400/10 text-green-400'
                               }`}>
                                 {project.status}
                               </span>
