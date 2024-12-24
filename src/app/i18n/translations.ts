@@ -3,7 +3,8 @@ export const translations = {
     nav: {
       about: 'About',
       projects: 'Projects',
-      contact: 'Contact'
+      contact: 'Contact',
+      github: 'GitHub'
     },
     home: {
       title: 'WFLAer.space',
@@ -149,7 +150,8 @@ export const translations = {
     nav: {
       about: '关于',
       projects: '项目',
-      contact: '联系'
+      contact: '联系',
+      github: 'GitHub'
     },
     home: {
       title: 'WFLAer.space',
