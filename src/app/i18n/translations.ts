@@ -141,7 +141,7 @@ export const translations = {
       }
     },
     footer: {
-      rights: 'All rights reserved.',
+      rights: 'This website is open source under the MIT License.',
       founder: 'Founded by dbc with ❤️ for WFLAers'
     }
   },
@@ -287,7 +287,7 @@ export const translations = {
       }
     },
     footer: {
-      rights: '保留所有权利。',
+      rights: '此网站遵循MIT许可证开源。',
       founder: '由dbc创立，用❤️服务WFLAers'
     }
   }

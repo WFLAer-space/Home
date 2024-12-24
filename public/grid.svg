@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="horizontalGradient" x1="0" y1="0" x2="32" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="verticalGradient" x1="0" y1="0" x2="0" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Grid -->
+  <g opacity="0.5">
+    <!-- Vertical lines -->
+    <line x1="0" y1="0" x2="0" y2="32" stroke="url(#verticalGradient)" stroke-width="1"/>
+    <line x1="8" y1="0" x2="8" y2="32" stroke="url(#verticalGradient)" stroke-width="0.5"/>
+    <line x1="16" y1="0" x2="16" y2="32" stroke="url(#verticalGradient)" stroke-width="0.5"/>
+    <line x1="24" y1="0" x2="24" y2="32" stroke="url(#verticalGradient)" stroke-width="0.5"/>
+    <line x1="32" y1="0" x2="32" y2="32" stroke="url(#verticalGradient)" stroke-width="1"/>
+    
+    <!-- Horizontal lines -->
+    <line x1="0" y1="0" x2="32" y2="0" stroke="url(#horizontalGradient)" stroke-width="1"/>
+    <line x1="0" y1="8" x2="32" y2="8" stroke="url(#horizontalGradient)" stroke-width="0.5"/>
+    <line x1="0" y1="16" x2="32" y2="16" stroke="url(#horizontalGradient)" stroke-width="0.5"/>
+    <line x1="0" y1="24" x2="32" y2="24" stroke="url(#horizontalGradient)" stroke-width="0.5"/>
+    <line x1="0" y1="32" x2="32" y2="32" stroke="url(#horizontalGradient)" stroke-width="1"/>
+  </g>
+
+  <!-- Intersection Points -->
+  <g opacity="0.8">
+    <circle cx="0" cy="0" r="0.5" fill="#3B82F6"/>
+    <circle cx="8" cy="8" r="0.5" fill="#6366F1"/>
+    <circle cx="16" cy="16" r="0.5" fill="#A855F7"/>
+    <circle cx="24" cy="24" r="0.5" fill="#6366F1"/>
+    <circle cx="32" cy="32" r="0.5" fill="#3B82F6"/>
+    
+    <circle cx="0" cy="32" r="0.5" fill="#3B82F6"/>
+    <circle cx="8" cy="24" r="0.5" fill="#6366F1"/>
+    <circle cx="16" cy="16" r="0.5" fill="#A855F7"/>
+    <circle cx="24" cy="8" r="0.5" fill="#6366F1"/>
+    <circle cx="32" cy="0" r="0.5" fill="#3B82F6"/>
+  </g>
+</svg> 

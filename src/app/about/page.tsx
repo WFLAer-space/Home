@@ -167,10 +167,10 @@ export default function AboutPage() {
                   <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-gray-100">{t.about.leadership.title}</h2>
                   <div className="flex items-center gap-6">
                     <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-indigo-500 flex items-center justify-center text-white text-2xl font-bold">
-                      HM
+                      D
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">He Mingze</h3>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">dbc</h3>
                       <p className="text-gray-600 dark:text-gray-300 mb-2">{t.about.leadership.founder}</p>
                       <p className="text-gray-500 dark:text-gray-400">{t.about.leadership.founderDesc}</p>
                     </div>
