@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { useLanguage } from '../i18n/LanguageContext'
 
 interface ProjectDescription {
