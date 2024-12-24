@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WFLAer.space
 
-## Getting Started
+WFLAer.space is a non-profit organization focused on enhancing the educational experience at WFLA International through innovative technology solutions. Our platform serves as a comprehensive service hub that bridges the gap between students, teachers, and educational resources.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Multilingual Support**: Full support for English and Simplified Chinese
+- **Modern UI/UX**: Responsive design with smooth animations and transitions
+- **Project Showcase**: Highlighting our innovative educational solutions
+- **Community Platform**: Connecting students, teachers, and developers
+- **Resource Management**: Centralized access to educational tools and materials
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 14 with App Router
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **State Management**: React Context
+- **Animations**: Custom CSS animations and Tailwind transitions
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/WFLAer-space/Home.git
+   cd Home
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🌐 Project Structure
+
+```
+src/
+├── app/
+│   ├── components/     # Reusable UI components
+│   ├── i18n/          # Internationalization
+│   ├── about/         # About page
+│   ├── projects/      # Projects page
+│   ├── contact/       # Contact page
+│   └── page.tsx       # Home page
+├── public/            # Static assets
+└── styles/           # Global styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📜 License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is open-source under the MIT License. See [LICENSE](LICENSE) for details.
 
-## Learn More
+## 🌟 Core Values
 
-To learn more about Next.js, take a look at the following resources:
+- **Innovation**: Pushing the boundaries of educational technology
+- **Collaboration**: Working together to create better solutions
+- **Education**: Making learning more accessible and engaging
+- **Community**: Building a supportive environment for growth
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📞 Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Email: service@wflaer.space
+- GitHub: [WFLAer-space](https://github.com/WFLAer-space)
 
-## Deploy on Vercel
+## 🙏 Acknowledgments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Special thanks to all contributors and the WFLA International community for their support and feedback in making this project possible.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Made with ❤️ by dbc for WFLAers
